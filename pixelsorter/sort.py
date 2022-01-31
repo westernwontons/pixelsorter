@@ -31,7 +31,7 @@ from pixelsorter.util import clamp, coords_to_index
 logger = logging.getLogger(__name__)
 
 
-class SortingArgs(collections.MutableMapping):
+class SortingArgs(collections.abc.MutableMapping):
     """
     A class for storing sorting options. It inherits from collections.MutableMapping so that options can be
     accessed and modified using the [] operator. It can also be passed as **kwargs into a function.
